@@ -1,43 +1,53 @@
-<!-- comentarios -->
+<!-- DOCTYPE se utiliza para indicarle al navegador que version de html se esta usando -->
 <!DOCTYPE html>
+<!-- La etiqueta <html> indica el inicio y el final del documento html -->
 <html>
+
+<!--head se utiliza para crear un espacio en el que se pueden escribir metadatos (también se usa para modificiaciones en CSS) -->
+
 <head>
+
    <meta charset="utf-8"> <!--Codificación-->
-   <meta name=""viewport content="with=device-width"> <!--Sirve para ajustar el ancho de la pagina con el del dispositivo-->
-   <title>Portfolio de Repsit</title>
-   <meta name="description" content="Portfolio de Repsit: Aficionado a los videojuegos y la programación.">
-   <meta property="og:title" content="Streamer programador de videojuegos">
-   <meta property="description" content="Portfolio de Repsit: Aficionado a los videojuegos y la programación.">
-   <meta property="og:image" content="/images/Repsit Logo.jgp">
+   <meta name=""viewport content="with=device-width"> <!--Sirve para ajustar el ancho de la página con el del dispositivo-->
+   <title>Portfolio de Repsit</title> <!--Asigna el estatus de titulo al elemento-->
+   <meta name="description" content="Portfolio de Repsit: Aficionado a los videojuegos y la programación."><!--La descripcion puesta aquí será la que se muestre en el buscador de cualquier explorador (no siempre es as)-->
+   <meta property="og:title" content="Streamer programador de videojuegos"> <!--Es el titulo que aparece en algún sitio donde se comparte el link.-->
+   <meta property="description" content="Portfolio de Repsit: Aficionado a los videojuegos y la programación."><!--Es la descripción que aparece en eñ compartido de algún sitio de mi página-->
+   <meta property="og:image" content="/images/Repsit Logo.jgp"> <!--Es la imagen que aparece en ese compartido en algun sitio web.-->
 
 
-   <meta name="robots" content="iindex, follow">
-   <meta name="theme-color" content="33E9FF">
-   <meta name="author" content="Diego 'Respit' Flores">
-
-   <style>
-      
+   <meta name="robots" content="index, follow"><!--Hace un llamado a los bots de los navegadores para que centren su atención en el index y los links que siguen esta página-->
+   <meta name="theme-color" content="33E9FF"> <!--Cambia el color de la parte superior del navegador (no fuinciona con todos los navegadores)-->
+   <meta name="author" content="Diego 'Respit' Flores"><!--El nombre de los autores de la página-->
+   
+   <!--Proporciona la sección en donde se puede ajustar el estilo de la página (se hace con CSS)-->
+   <style> 
       body {
          background: #47EFF1;
       }
       </style>
 
-<link rel="icon" type="image/jpg"  href="/images/Repsit Logo.jpg">
+<link rel="icon" href="/images/Repsit Logo.jpg"> <!--Pone un icono en el icono de la pestaña (no funciona con todos los navegadores)-->
 </head>
 
-<body>
-   <header>
-      <h1>Portfolio de Repsit 👀</h1>
-      <nav>
-         <a href="videos">Videos</a>   
+<body><!--El cuerpo de la pagina-->
+   <header><!--El encabezado de la página-->
+      <h1>Portfolio de Repsit 👀</h1><!-- h1 funciona para crear un titulo-->
+      <nav> <!--Es una tag para navegar en la misma página o para ir a otras páginas -->
+         <a href="videos">Videos</a>    
          <a href="juegos">Juegos</a>
          <a href="https://www.youtube.com/channel/UCgPTuAafTO7mLjM1-OvhnXA">Youtube</a>
          <a href="https://www.twitch.tv/repsituwu/profile">Twitch</a>
       </header>
-      <section>
-         <p>Hola, me gusta <strong>programar</strong> y estoy aprendiendo como hacerlo comenzando con html.</p> 
-         <h2><em>Hobbies</em></h>
-            <ul>
+
+      <section> <!--Le da a una parte del documento el valor de sección para organizar meor la informmación-->
+         <p>Hola, me gusta <strong>programar</strong> y estoy aprendiendo como hacerlo comenzando con html.</p>
+         <!-- el tag <p> Sirve para generar un parrafo y la tag <strong> sirve para dar enfásiis en una palabra o texto en especifico (no confundir con <b>)--> 
+         <h2><em>Hobbies</em></h> <!-- el tag <em> se utiliza para hacer cuirsivas las letras -->
+            <ul> <!-- el tag <ul> significa unorderer list y se utiliza para hacer una lista de la mano de otras etiquetas como <li> y <lo> -->
+
+               <!-- El tag <li> que significa list item se utiliza para ordenar elementos en una lista -->
+               <!-- El atributo class="" se utiliza para darle un nombre a un elemento siendo mas flexiible que el atributo id="" -->
                <li class="list-hobbies">League of legends </li>
                <li class="list-hobbies">Rainbowsix siege</li>
                <li class="list-hobbies">Valorant</li>
@@ -49,7 +59,16 @@
             </ul>
                
          </section>
-         <img 
+         <!-- El tag <img> se utiliza para introducir elementos multimedia y puedes ponerle atributos 
+            dentro para modificar o agregar informacion a la imagen
+         id se utiliza para darle un nombre que no se puede repetir, al elemento 
+         width se usa para cammbiar el ancho de la imagen
+         heigth se usa para cammbiar el alto de la imagen
+         title hace que al poner el mouse muestre el nombre de la imagen
+         alt hace que en el caso de que la imagen no cargue en el sitio web ponga una descripcion que diga que es lo que se deberia mostrar en lugar del icono
+         src viene del inglés source y se utiliza para llamar un objeto de alguna parte ya sea de la mnisma carpeta o de internet y se pueda mostrar en la pagina
+         -->
+         <img
          id="LogoRepsit"
          width ="200"
          height="200"
@@ -63,28 +82,3 @@
       
       </html>
          
-
-
-         
-
-   
-         
-         
-               
-               
-            
-            
-         
-   
-
-
-
-
-
-
-
-
-
-
-
-   

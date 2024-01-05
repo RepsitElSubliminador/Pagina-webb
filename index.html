@@ -21,33 +21,29 @@
     
    
    <!--Proporciona la sección en donde se puede ajustar el estilo de la página (se hace con CSS)-->
-   <style> 
-      body {
-         background: #00fbff;
-      }
-      </style>
+   
 <link rel="">
 <link rel="icon" href="/images/Repsit Logo.jpg"> <!--Pone un icono en el icono de la pestaña (no funciona con todos los navegadores)-->
-<link rel="stylesheet"  type="text/css" href="./estilos.css">
+<link rel="stylesheet"  type="text/css" href="./style.css">
 
    </head>
 
 <header><!--El encabezado de la página-->
    <h1>Portfolio de Repsit 👀</h1><!-- h1 funciona para crear un titulo-->
    <nav> <!--Es una tag para navegar  -->
-      <a href="#experiencia">Experiencia</a>    <!--a de ancord se usa para hacer saltos de vinculos internos-->
-      <a href="#hobbies">Hobbies</a>
-      <a href="#stream">Stream</a>
-      <a href="#setup">Setup</a>
-      <a href="https://www.youtube.com/channel/UCgPTuAafTO7mLjM1-OvhnXA" target="_blank" rel="norferrer">Youtube</a>
-      <a href="https://www.twitch.tv/repsituwu/profile" target="_blank" rel="norferrer">Twitch</a>
+      <a class="link" href="#hobbies">Hobbies</a>
+      <a class="link" href="#stream">Stream</a>
+      <a class="link" href="#setup">Setup</a>
+      <a class="link" href="#experiencia">Experiencia</a>    <!--a de ancord se usa para hacer saltos de vinculos internos-->
+      <a class="link" href="https://www.youtube.com/channel/UCgPTuAafTO7mLjM1-OvhnXA" target="_blank" rel="norferrer">Youtube</a>
+      <a class="link" href="https://www.twitch.tv/repsituwu/profile" target="_blank" rel="norferrer">Twitch</a>
    </nav>
 
    </header>
-<main>
 
-<body><!--El cuerpo de la pagina-->
 
+<body class="cuerpo"><!--El cuerpo de la pagina-->
+   <main>
       <section> <!--Le da a una parte del documento el valor de sección para organizar meor la informmación-->
          <p class="negrita"> Hola, me gusta programar y estoy aprendiendo como hacerlo comenzando con html. </p>
 
@@ -90,11 +86,11 @@
          </div>
          <div>
 
-          <a href="https://lenguajehtml.com/html/" target="_blank" rel="norferrer" title="Boton feliz"> <button>Click aqui :)</button></a>
+          <a href="https://lenguajehtml.com/html/" target="_blank" rel="norferrer" title="Boton feliz"> <button id="botonfeliz" >Click aqui :)</button></a>
 
          </div>
       <section>
-         <h3>Experiencia</h3>    
+         <h3 id="experiencia">Experiencia</h3>    
          <p>
             Tengo mucha experiencia en diversos juegos, desde xbox hasta nintendo y con una ifinidad de juegos acabados. Entre todos mis juegos terminados
             se encuentran: </p>
@@ -119,113 +115,117 @@
       
             
          </section>
-      <h3 id="stream">Stream</h3>
-      <p>
-         Mi experiencia como streamer es de 3 años aproximadamente, comence a mediados de la pandemia de 2019, donde dediqué mi tiempo a hacer un canal de 
-         Twitch en el cual transmito de vez en cuando juegos que me gustan como League of Legends o Valorant.
-         A ese canal le puse mucho empeño y le dedique ademas de tiempo mucho dinero, 
-         armando mi setup desde 0 con piezas nuevas y de poco en poco ahorrando mucho para tener la computadora tan rapida y bonita que tengo a día de 
-         hoy. Todo fue con ayuda de mis amigos y de mi familia que siempre me apoyarón.
-      </p>
 
-      <h3 id="setup"> Setup </h3>
-      <p>
-         El setup que utilizo tiene los siguientes componenetes:
-      </p>
-      <ul>
-         <li class="componentes">Procesador: Ryzen 5 - 5600g</li>
-         <li class="componentes">Tarjeta madre: Asus Prime A520-M II</li>
-         <li class="componentes">Memoria ram:16gb de memoria DDR4 3600 hz</li>
-         <li class="componentes">Tarjeta grafica: RTX 5600 XT</li>
-         <li class="componentes">Almacenamiento:</li>
-            <ul>
-               <li class="componentes">Disco duro de 1TB</li>
-               <li class="componentes">SSD de 250 gb</li>
-            </ul>
-         
-         <li class="componentes">Fuente de poder: 750W Certificación Bronce 80 Plus</li>
-      </ul>
-   </body>
+      <section>
+         <h3 id="stream">Stream</h3>
+           <p>
+               Mi experiencia como streamer es de 3 años aproximadamente, comence a mediados de la pandemia de 2019, donde dediqué mi tiempo a hacer un canal de 
+               Twitch en el cual transmito de vez en cuando juegos que me gustan como League of Legends o Valorant.
+               A ese canal le puse mucho empeño y le dedique ademas de tiempo mucho dinero, 
+               armando mi setup desde 0 con piezas nuevas y de poco en poco ahorrando mucho para tener la computadora tan rapida y bonita que tengo a día de 
+               hoy. Todo fue con ayuda de mis amigos y de mi familia que siempre me apoyarón.
+               </p>
 
-   <section>
-   <form>
-   
-      <h2>Formulario</h2>
-      <form  action="/page.php" method="">
-         <fieldset>
+         <h3 id="setup"> Setup </h3>
+            <p>El setup que utilizo tiene los siguientes componenetes:</p>
+               <ul>
+                  <li class="componentes">Procesador: Ryzen 5 - 5600g</li>
+                  <li class="componentes">Tarjeta madre: Asus Prime A520-M II</li>
+                  <li class="componentes">Memoria ram:16gb de memoria DDR4 3600 hz</li>
+                  <li class="componentes">Tarjeta grafica: RTX 5600 XT</li>
+                  <li class="componentes">Almacenamiento:</li>
+                     <ul>
+                        <li class="componentes">Disco duro de 1TB</li>
+                        <li class="componentes">SSD de 250 gb</li>
+                        </ul>
+               
+                  <li class="componentes">Fuente de poder: 750W Certificación Bronce 80 Plus</li>
+                  </ul>
+         </section>
 
-            <legend>Informacion información general</legend>
-            <div>
-               <label for="name">Nombre:
-               <input type="text" id="name" name="name"
-                  placeholder="Kadha Jhin" required>
-               </label>
-            </div>
-            
-            
-            <label for="email">Email:
-               <input type="email" id="Email" placeholder="ejemplo@gmail.com" required> 
-            
-              </label>   
-
-            </fieldset>
-
-         <fieldset>
-
-            <legend>Informacion adicional</legend>
-           <label for="" id="telefono">
-
-            Telefono:   <input type="phone" id="numero" placeholder="554652145" required pattern="[0-9]{10}">
-
-               </label>
-         
-            </fieldset>
-         
-         <fieldset>
-
-            <legend>Otros</legend>
-               <div>
-               <label for="why">
-                  Juego favorito
-                  <select name="why" id="juegofav">
-                     <option value="0">Juegos</option>
-                     <option value="1">League of Legends</option>
-                     <option value="2">Valorant</option>
-                     <option value="3">Halo</option>
-                     <option value="4">Doom</option>
+      <section>
+            <form>
+               <h2>Formulario</h2>
+               <form  action="/page.php" method="">
+                  <fieldset class="fieldmarco">
+                     <legend>Informacion general</legend>
+                        <div>
+                           <label for="name">Nombre:
+                           <input type="text" id="name" name="name"
+                              placeholder="Kadha Jhin" required>
+                              </label>
+                           </div>
                      
-                  </select>
-                  </label>
-                  </div>
-                  <div>
+                     
+                     <label for="email">Email:
+                        <input type="email" id="Email" placeholder="ejemplo@gmail.com" required> 
+                        </label>   
 
-                     <label for="like">Te gusta la pagina?</label>
-                     <input type="checkbox" name="like" id="like">
+                     </fieldset>
 
-                  </div>
-            </fieldset>   
-         
+                  <fieldset class="fieldmarco">
 
-            <input type="submit" value="Enviar">
+                     <legend>Informacion adicional</legend>
+                        <label for="" id="telefono">
 
+                           Telefono:   <input type="phone" id="numero" placeholder="554652145" required pattern="[0-9]{10}">
 
-      </form>
+                           </label>
+                  
+                     </fieldset>
+                  
+                  <fieldset class="fieldmarco">
 
-   </form>
-      </section>
-   </main>
+                     <legend>Otros</legend>
+                        <div>
+                        <label for="why">
+                           Juego favorito
+                           <select name="why" id="juegofav">
+                              <option value="0">Juegos</option>
+                              <option value="1">League of Legends</option>
+                              <option value="2">Valorant</option>
+                              <option value="3">Halo</option>
+                              <option value="4">Doom</option>
+                              
+                              </select>
+                           </label>
+                           </div>
+                           <div>
+                              <label for="like">Te gusta la pagina?</label>
+                              <input type="checkbox" name="like" id="like">
+                              </div>
+                     </fieldset>
+                        <input type="submit" value="Enviar">
+               </form>
+
+            </form>
+         </section>
 
 <footer>
-      copyrigth © 2024 - Portfolio de Repsit 
-
-      <nav>
-      <a href="mailto:golfithehcrack@gmail.com" >Correo</a>
-      <a href="tel:525543717901" >Telefono</a>
-
-      <a aria-label="Chat on WhatsApp" href="https://wa.me/525543717901/?text=hola%20mundo" target="_blank" rel="norferrer"><img title="Chat on Whatsapp" alt="Chat on WhatsApp" src="/ChatOnWhatsAppButton/WhatsAppButtonGreenLarge.png"/>
-         <a/>
-      </nav>
-      
+    copyrigth © 2024 - Portfolio de Repsit 
+   
+         <nav>
+            
+         <a class="footerlinks" href="mailto:golfithehcrack@gmail.com" ><img height="50" src="/images/correo.png" alt=""></a>
+         <a class="footerlinks" href="tel:525543717901" ><img src="/images/telefono.png" height="50" alt=""></a>
+   
+         <a class="footerlinks" aria-label="Chat on WhatsApp" href="https://wa.me/525543717901/?text=hola%20mundo" target="_blank" rel="norferrer">
+            <img 
+            title="Chat on Whatsapp" 
+            width ="230"
+            height="50"
+            alt="Chat on WhatsApp" 
+            src="/ChatOnWhatsAppButton/WhatsAppButtonGreenLarge.png"/>
+            <a/>
+           </nav>
+         
    </footer>
+
+
+      </main>
+
+
+</body>
+
    </html>
          

@@ -11,26 +11,26 @@
    <meta name=""viewport content="with=device-width"> <!--Sirve para ajustar el ancho de la página con el del dispositivo-->
    <title>Portfolio de Repsit</title> <!--Asigna el estatus de titulo al elemento-->
    <meta name="description" content="Portfolio de Repsit: Aficionado a los videojuegos y la programación."><!--La descripcion puesta aquí será la que se muestre en el buscador de cualquier explorador (no siempre es as)-->
+   <meta name="robots" content="index, follow"><!--Hace un llamado a los bots de los navegadores para que centren su atención en el index y los links que siguen esta página-->
+   <meta name="theme-color" content="33E9FF"> <!--Cambia el color de la parte superior del navegador (no fuinciona con todos los navegadores)-->
+   <meta name="author" content="Diego 'Respit' Flores"><!--El nombre de los autores de la página-->
    <meta property="og:title" content="Streamer programador de videojuegos"> <!--Es el titulo que aparece en algún sitio donde se comparte el link.-->
    <meta property="description" content="Portfolio de Repsit: Aficionado a los videojuegos y la programación."><!--Es la descripción que aparece en eñ compartido de algún sitio de mi página-->
    <meta property="og:image" content="images/Repsit Logo.jgp"> <!--Es la imagen que aparece en ese compartido en algun sitio web.-->
    <meta property="og:image: width" content="200">
    <meta property="og:image: heigth" content="200">
-   <meta name="robots" content="index, follow"><!--Hace un llamado a los bots de los navegadores para que centren su atención en el index y los links que siguen esta página-->
-   <meta name="theme-color" content="33E9FF"> <!--Cambia el color de la parte superior del navegador (no fuinciona con todos los navegadores)-->
-   <meta name="author" content="Diego 'Respit' Flores"><!--El nombre de los autores de la página-->
     
    
    <!--Proporciona la sección en donde se puede ajustar el estilo de la página (se hace con CSS)-->
    
-<script src="js/myscript.js"></script>></script>
+
 <link rel="icon" href="images/Repsit Logo.jpg"> <!--Pone un icono en el icono de la pestaña (no funciona con todos los navegadores)-->
 <link rel="stylesheet"  type="text/css" href="./style.css">
 
    </head>
 
 <header><!--El encabezado de la página-->
-   <h1>Portfolio de Repsit 👀</h1><!-- h1 funciona para crear un titulo-->
+   <h1 class="titulo">Portfolio de Repsit 👀</h1><!-- h1 funciona para crear un titulo-->
    <nav> <!--Es una tag para navegar  -->
       <a class="link" href="#hobbies">Hobbies</a>
       <a class="link" href="#stream">Stream</a>
@@ -45,11 +45,11 @@
 
 <body class="cuerpo"><!--El cuerpo de la pagina-->
    <main>
-      <section class="seccion"> <!--Le da a una parte del documento el valor de sección para organizar meor la informmación-->
+      <section> <!--Le da a una parte del documento el valor de sección para organizar meor la informmación-->
          <p class="negrita"> Hola, me gusta programar y estoy aprendiendo como hacerlo comenzando con html. </p>
 
          <!-- el tag <p> Sirve para generar un parrafo y la tag <strong> sirve para dar enfásiis en una palabra o texto en especifico (no confundir con <b>)--> 
-         <h2 id="hobbies">Hobbies</h2> <!-- el tag <em> se utiliza para hacer cuirsivas las letras -->
+         <h2 class="titulo" id="hobbies">Hobbies</h2> <!-- el tag <em> se utiliza para hacer cuirsivas las letras -->
             <ul> <!-- el tag <ul> significa unorderer list y se utiliza para hacer una lista de la mano de otras etiquetas como <li> y <lo> -->
 
                <!-- El tag <li> que significa list item se utiliza para ordenar elementos en una lista -->
@@ -90,8 +90,8 @@
           <a href="https://lenguajehtml.com/html/" target="_blank" rel="norferrer" title="Boton feliz"> <button id="botonfeliz" >Click aqui :)</button></a>
 
          </div>
-      <section class="seccion">
-         <h3 id="experiencia">Experiencia</h3>    
+      <section>
+         <h3 class="titulo" id="experiencia">Experiencia</h3>    
          <p>
             Tengo mucha experiencia en diversos juegos, desde xbox hasta nintendo y con una ifinidad de juegos acabados. Entre todos mis juegos terminados
             se encuentran: </p>
@@ -117,8 +117,8 @@
             
          </section>
 
-      <section class="seccion">
-         <h3 id="stream">Stream</h3>
+      <section>
+         <h3 class="titulo" id="stream">Stream</h3>
            <p>
                Mi experiencia como streamer es de 3 años aproximadamente, comence a mediados de la pandemia de 2019, donde dediqué mi tiempo a hacer un canal de 
                Twitch en el cual transmito de vez en cuando juegos que me gustan como League of Legends o Valorant.
@@ -127,7 +127,7 @@
                hoy. Todo fue con ayuda de mis amigos y de mi familia que siempre me apoyarón.
                </p>
 
-         <h3 id="setup"> Setup </h3>
+         <h3 class="titulo" id="setup"> Setup </h3>
             <p>El setup que utilizo tiene los siguientes componenetes:</p>
                <ul>
                   <li class="componentes">Procesador: Ryzen 5 - 5600g</li>
@@ -144,9 +144,9 @@
                   </ul>
          </section>
 
-      <section class="seccion">
+      <section>
             <form>
-               <h2>Formulario</h2>
+               <h2 class="titulo">Formulario</h2>
                <form  action="/page.php" method="">
                   <fieldset class="fieldmarco">
                      <legend>Informacion general</legend>
@@ -225,7 +225,7 @@
 
       </main>
 
-
+      <script src="./script.js"></script>></script>
 </body>
 
    </html>
